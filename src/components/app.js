@@ -1,5 +1,14 @@
-angular.module('video-player')
+angular.module('video-player', [])
 
 .component('app', {
-  // TODO
+  
+  //don't use an arrow function here. It messes up the 'this' value.
+  controller: function ($window) {
+    this.videos = $window.exampleVideoData;
+    this.select = $window.firstVideo;
+
+  },
+  
+  
+  templateUrl: 'src/templates/app.html'
 });
