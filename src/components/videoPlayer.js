@@ -1,14 +1,14 @@
 angular.module('video-player')
 
-.component('videoPlayer', {
+  .component('videoPlayer', {
   
-  binding: {
-    select: '<'
-  },
+    bindings: {
+      video: '<'
+    },
   
-  controller: function() {
-    
-  },
+    controller: function() {
+
+    },
   
-  templateUrl: 'src/templates/videoPlayer.html'
-});
+    templateUrl: 'src/templates/videoPlayer.html'
+  });
