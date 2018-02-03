@@ -7,6 +7,11 @@ angular.module('video-player')
       this.videos = window.exampleVideoData;
       this.video = window.exampleVideoData[0];
       console.log(this.videos);
+      
+      this.clickHandler = (index) => {
+        console.log(index, 'YEEE');
+        this.video = this.videos[index];
+      };
     },
     
     
